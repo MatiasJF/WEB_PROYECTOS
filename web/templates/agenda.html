@@ -1,0 +1,21 @@
+{% extends "base.html" %} {% block title %}Agenda{% endblock %} {% block content
+    %}
+    <h1 align="center">Agenda</h1>
+    <ul class="list-group list-group-flush" id="entrada">
+      {% for agenda in user.agenda %}
+      <li class="list-group-item">
+        {{ agenda.data }}
+        <button type="button" class="close" onClick="deleteAgenda({{agenda.id}})">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </li>
+      {% endfor %}
+    </ul>
+    <form method="POST">
+      <textarea name="entrada" id="entrada" class="form-control"></textarea>
+      <br />
+      <div align="center">
+        <button type="submit" class="btn btn-primary">Añadir Entrada</button>
+      </div>
+    </form>
+    {% endblock %}

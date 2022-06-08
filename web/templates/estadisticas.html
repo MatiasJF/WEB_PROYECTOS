@@ -1,0 +1,269 @@
+{% extends "base.html" %} {% block title %}Estadisticas{% endblock %} {% block
+    content %}
+<h1 align="center" style="background:#fab8b8;">Informacion Sobre Abandono Escolar</h1>
+
+
+<h2 align="center" style="background:#fffa71;">No seas uno más, se mejor</h2>
+<table class="table">
+    
+    <thead>
+    <h3 align="center" style="background:#fab8b8;;">Abandono Temprano Escolar España-UE</h3>
+      <tr style="background-color:#fab8b8;">
+        <th scope="col">Paises</th>
+        <th scope="col">Año2020</th>
+        <th scope="col">Año2019</th>
+        <th scope="col">Año2018</th>
+        <th scope="col">Año2017</th>
+        <th scope="col">Año2016</th>
+        <th scope="col">Año2015</th>
+        <th scope="col">Año2014</th>
+        <th scope="col">Año2013</th>
+        <th scope="col">Año2012</th>
+        <th scope="col">Año2011</th>
+        <th scope="col">Año2010</th>    
+      </tr>
+    </thead>
+    <tbody>
+          {% for i in lista %}
+        <tr style="background-color:#cbf3f3;">
+            <td scope="row">{{ i.0 }}</td>
+            <td>{{ i.1 }}</td>
+            <td>{{ i.2 }}</td>
+            <td>{{ i.3 }}</td>
+            <td>{{ i.4 }}</td>
+            <td>{{ i.5 }}</td>
+            <td>{{ i.6 }}</td>
+            <td>{{ i.7 }}</td>
+            <td>{{ i.8 }}</td>
+            <td>{{ i.9 }}</td>
+            <td>{{ i.10 }}</td>
+            <td>{{ i.11 }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+  </table>
+
+  <br>
+
+<table class="table">
+    <thead>
+    <h3 align="center" style="background:#fab8b8;;">Abandono Temprano De La Educación y La Formación</h3>
+      <tr style="background-color:#fab8b8;">
+        <th scope="col">Paises</th>
+        <th scope="col">Año2020</th>
+        <th scope="col">Año2019</th>
+        <th scope="col">Año2018</th>
+        <th scope="col">Año2017</th>
+        <th scope="col">Año2016</th>
+        <th scope="col">Año2015</th>
+        <th scope="col">Año2014</th>
+        <th scope="col">Año2013</th>
+        <th scope="col">Año2012</th>
+        <th scope="col">Año2011</th>
+        <th scope="col">Año2010</th>    
+      </tr>
+    </thead>
+    <tbody>
+        {% for i in lista2 %}
+        <tr style="background-color:#cbf3f3;">
+            <td scope="row">{{ i.0 }}</td>
+            <td>{{ i.1 }}</td>
+            <td>{{ i.2 }}</td>
+            <td>{{ i.3 }}</td>
+            <td>{{ i.4 }}</td>
+            <td>{{ i.5 }}</td>
+            <td>{{ i.6 }}</td>
+            <td>{{ i.7 }}</td>
+            <td>{{ i.8 }}</td>
+            <td>{{ i.9 }}</td>
+            <td>{{ i.10 }}</td>
+            <td>{{ i.11 }}</td>
+            
+        </tr>
+        {% endfor %}
+    </tbody>
+    
+
+<table class="table">
+    <thead>
+    <h3 align="center" style="background:#fab8b8;;">Nivel De Formación De La Población Adulta De 25 A 64 Años</h3>
+      <tr style="background-color:#fab8b8;">
+        <th scope="col">Rangos                </th>
+        <th scope="col">2020Hombres</th>
+        <th scope="col">2019Hombres</th>
+        <th scope="col">2018Hombres</th>
+        <th scope="col">2017Hombres</th>        
+        <th scope="col">2020Mujeres</th>
+        <th scope="col">2019Mujeres</th>
+        <th scope="col">2018Mujeres</th>
+        <th scope="col">2017Mujeres</th>         
+      </tr>
+    </thead>
+    <tbody>
+        {% for i in lista3 %}
+        <tr style="background-color:#cbf3f3;">
+            <td scope="row">{{ i.0 }}</td>
+            <td>{{ i.1 }}</td>
+            <td>{{ i.2 }}</td>
+            <td>{{ i.3 }}</td>
+            <td>{{ i.4 }}</td>                
+            <td>{{ i.9 }}</td>
+            <td>{{ i.10 }}</td>
+            <td>{{ i.11 }}</td>
+            <td>{{ i.12 }}</td>            
+        </tr>
+        {% endfor %}
+    </tbody>
+<table class="table">
+    <thead>
+    <h3 align="center" style="background:#fab8b8;;">Nivel De Formación De La Población Adulta De 25 A 64 Años UE</h3>
+      <tr style="background-color:#fab8b8;">
+        <th scope="col">Rangos                </th>
+        <th scope="col">2020Hombres</th>
+        <th scope="col">2019Hombres</th>
+        <th scope="col">2018Hombres</th>
+        <th scope="col">2017Hombres</th>        
+        <th scope="col">2020Mujeres</th>
+        <th scope="col">2019Mujeres</th>
+        <th scope="col">2018Mujeres</th>
+        <th scope="col">2017Mujeres</th>         
+      </tr>
+    </thead>
+    <tbody>
+        {% for i in lista4 %}
+        <tr style="background-color:#cbf3f3;">
+            <td scope="row">{{ i.0 }}</td>
+            <td>{{ i.1 }}</td>
+            <td>{{ i.2 }}</td>
+            <td>{{ i.3 }}</td>
+            <td>{{ i.4 }}</td>                
+            <td>{{ i.9 }}</td>
+            <td>{{ i.10 }}</td>
+            <td>{{ i.11 }}</td>
+            <td>{{ i.12 }}</td>            
+        </tr>
+        {% endfor %}
+    </tbody>
+<table class="table">
+    <thead>
+    <h3 align="center" style="background:#fab8b8;;">Población De 30 A 34 Años Con Educación Superior En La UE</h3>
+      <tr style="background-color:#fab8b8;">
+        <th scope="col">Rangos                </th>
+        <th scope="col">2020</th>
+        <th scope="col">2019</th>
+        <th scope="col">2018</th>
+        <th scope="col">2017</th>        
+        <th scope="col">2016</th>
+        <th scope="col">2015</th>
+        <th scope="col">2014</th>       
+      </tr>
+    </thead>
+    <tbody>
+        {% for i in lista5 %}
+        <tr style="background-color:#cbf3f3;">
+            <td scope="row">{{ i.0 }}</td>
+            <td>{{ i.1 }}</td>
+            <td>{{ i.2 }}</td>
+            <td>{{ i.3 }}</td>
+            <td>{{ i.4 }}</td>                
+            <td>{{ i.5 }}</td>
+            <td>{{ i.6 }}</td>
+            <td>{{ i.7 }}</td>         
+        </tr>
+        {% endfor %}
+    </tbody>
+<table class="table">
+    <thead>
+    <h3 align="center" style="background:#fab8b8;;">Población Joven Con Segunda Etapa De La Educacion Secundaria UE</h3>
+      <tr style="background-color:#fab8b8;">
+        <th scope="col">Rangos                </th>
+        <th scope="col">2020</th>
+        <th scope="col">2019</th>
+        <th scope="col">2018</th>
+        <th scope="col">2017</th>        
+        <th scope="col">2016</th>
+        <th scope="col">2015</th>
+        <th scope="col">2014</th>       
+      </tr>
+    </thead>
+    <tbody>
+        {% for i in lista6 %}
+        <tr style="background-color:#cbf3f3;">
+            <td scope="row">{{ i.0 }}</td>
+            <td>{{ i.1 }}</td>
+            <td>{{ i.2 }}</td>
+            <td>{{ i.3 }}</td>
+            <td>{{ i.4 }}</td>                
+            <td>{{ i.5 }}</td>
+            <td>{{ i.6 }}</td>
+            <td>{{ i.7 }}</td>         
+        </tr>
+        {% endfor %}
+    </tbody>
+<table class="table">
+    <thead>
+    <h3 align="center" style="background:#fab8b8;;">Tasas Netas De Escolarización De 16 A 24 Años</h3>
+      <tr style="background-color:#fab8b8;">
+        <th scope="col">Rangos
+        <th scope="col">2018Mujeres</th>
+        <th scope="col">2017Mujeres</th>        
+        <th scope="col">2016Mujeres</th>
+        <th scope="col">2015Mujeres</th> 
+        <th scope="col">2018Hombres</th>
+        <th scope="col">2017Hombres</th>        
+        <th scope="col">2016Hombres</th>
+        <th scope="col">2015Hombres</th>      
+      </tr>
+    </thead>
+    <tbody>
+        {% for i in lista7 %}
+        <tr style="background-color:#cbf3f3;">
+            <td scope="row">{{ i.0 }}</td>
+            <td>{{ i.1 }}</td>
+            <td>{{ i.2 }}</td>
+            <td>{{ i.3 }}</td>
+            <td>{{ i.4 }}</td> 
+            <td>{{ i.6 }}</td>
+            <td>{{ i.7 }}</td>     
+            <td>{{ i.8 }}</td>
+            <td>{{ i.9 }}</td>     
+        </tr>
+        {% endfor %}
+    </tbody>
+<table class="table">
+    <thead>
+    <h3 align="center" style="background:#fab8b8;;">Tasas De Escolarización Por Edad Total Enseñanzas</h3>
+      <tr style="background-color:#fab8b8;">
+        <th scope="col">Rangos
+            <th scope="col">2018Mujeres</th>
+            <th scope="col">2017Mujeres</th>        
+            <th scope="col">2016Mujeres</th>
+            <th scope="col">2015Mujeres</th> 
+            <th scope="col">2018Hombres</th>
+            <th scope="col">2017Hombres</th>        
+            <th scope="col">2016Hombres</th>
+            <th scope="col">2015Hombres</th>          
+      </tr>
+    </thead>
+    <tbody>
+        {% for i in lista8 %}
+        <tr style="background-color:#cbf3f3;">
+            <td scope="row">{{ i.0 }}</td>
+            <td>{{ i.1 }}</td>
+            <td>{{ i.2 }}</td>
+            <td>{{ i.3 }}</td>
+            <td>{{ i.4 }}</td>                
+            <td>{{ i.10 }}</td>
+            <td>{{ i.11 }}</td>
+            <td>{{ i.12 }}</td>
+            <td>{{ i.13 }}</td>         
+        </tr>
+        {% endfor %}
+    </tbody>
+  </table>
+
+
+
+
+  
+{% endblock %}
