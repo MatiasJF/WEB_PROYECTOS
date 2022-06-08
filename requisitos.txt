@@ -1,0 +1,5 @@
+EXTENSIONES QUE DEBES INSTALAR PARA PODER EJECUTAR EL PROGRAMA:
+  -flask
+  -Flask-SQLAlchemy
+  -flask-login
+ 
